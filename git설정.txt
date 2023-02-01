@@ -1,0 +1,11 @@
+/*초기 설정 파일 만들기 */
+git init
+
+/*로컬 버전 만들기*/
+git add .
+git commit -m "메시지" 
+
+/*github 서버와 연동*/
+git remote add origin 본인주소
+git branch -M main
+git push -u origin main

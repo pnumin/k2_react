@@ -1,16 +1,11 @@
-import './App.css';
-import MyDiv1 from './01/MyDiv1';
-import MyDiv2 from './01/MyDiv2';
-import MyClock from './01/MyClock';
+import './App.css'; 
+// import Box from './02/Box' ; 
+import Frcst from './04/Frcst';
 
 const App = () => {
   return (
-    <div  className="App-header">
-      <MyDiv1 />
-      <MyDiv2 />
-      <MyClock />
-    </div>
-   
+    // <Box /> 
+    <Frcst />
   );
 }
 

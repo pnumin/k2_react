@@ -1,9 +1,9 @@
-import logo from '../logo.svg';
+import logo from '../logo.svg'; 
 
-const MyDiv1 = () => {
+const MyDiv1 = () => { 
   return (
     <div>
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo" /> 
     </div>
   );
 }
