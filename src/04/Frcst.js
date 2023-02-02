@@ -17,7 +17,6 @@ const Frcst = () => {
     frcstFourDt : 넷째날예보일시
     */
     
-
     const items = [
         {
         "frcstFourDt":"2023-02-05",
@@ -60,19 +59,23 @@ const Frcst = () => {
     }    
     //console.log("fcrobj ", fcrobj);
 
-    let [cn, setCn] = useState(fcrobj["2023-02-02"]) ;
+    let [cn, setCn] = useState(fcrcn[0]) ;
     let [dt, setDt] = useState() ;
 
     useEffect(() => {
-        console.log("useEffect", fcrobj[dt]);
+        // console.log("useEffect", fcrobj[dt]);
         fcrobj[dt] && setCn(fcrobj[dt])
+       
+            // setCn(fcrobj[dt]);
+      
     }, [dt]);
+
     return (
         <>
             <Frcheader /> 
             <div className="main">
-                <Frcdt dt={fcrdt} setDt={setDt}/>
-                <Frccn cn={cn}/>
+                <Frcdt fcrdt={fcrdt} setDt={setDt}/>
+                {dt && <Frccn dt={dt} cn={cn}/> }
             </div>
         </>
     ) ;
