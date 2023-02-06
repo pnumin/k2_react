@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 const Taccidentm = ({c1, c2, data}) => {
     // console.log("c1", c1);
     // console.log("c2", c2);
-    console.log("data", data) ;
+    //console.log("data", data) ;
 
     //선택된 대분류
     let [selC1, setSelC1] = useState() ;
