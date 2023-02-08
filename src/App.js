@@ -3,7 +3,9 @@ import './App.css';
 // import Mydiv from './03/Mydiv' ;
 // import Frcst from './04/Frcst';
 // import Taccident from './05/Taccident' ;
-import Gal from "./06/Gal" ;
+// import Gal from "./06/Gal" ;
+//import Mycom from "./07/Mycom" ; 
+import Myform from "./08/MyForm" ;
 
 const App = () => {
   return (
@@ -12,7 +14,9 @@ const App = () => {
     // <Frcst />
 
     // <Taccident />
-    <Gal />
+    //<Gal />
+    //</Mcom />
+    <Myform />
   );
 }
 
