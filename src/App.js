@@ -4,8 +4,14 @@ import './App.css';
 // import Frcst from './04/Frcst';
 // import Taccident from './05/Taccident' ;
 // import Gal from "./06/Gal" ;
+// import GalSelect from "./06/GalSelect" ;
+
 //import Mycom from "./07/Mycom" ; 
-import Myform from "./08/MyForm" ;
+//import Myform from "./08/MyForm" ;
+
+// import RouteMain from "./09/RouteMain" ;
+import Wmain from './10/Wmain';
+import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
   return (
@@ -14,9 +20,14 @@ const App = () => {
     // <Frcst />
 
     // <Taccident />
-    //<Gal />
+    // <Gal />
+    // <GalSelect />
     //</Mcom />
-    <Myform />
+   //<Myform />
+    <BrowserRouter>
+      {/* <RouteMain /> */}
+      <Wmain />
+    </BrowserRouter>
   );
 }
 
