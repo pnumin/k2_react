@@ -10,8 +10,11 @@ import './App.css';
 //import Myform from "./08/MyForm" ;
 
 // import RouteMain from "./09/RouteMain" ;
-import Wmain from './10/Wmain';
-import { BrowserRouter } from 'react-router-dom';
+//import Wmain from './10/Wmain';
+// import Async from './11/Async' ;
+import Boxoffice from './11/Boxoffice' ;
+
+// import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
   return (
@@ -22,12 +25,15 @@ const App = () => {
     // <Taccident />
     // <Gal />
     // <GalSelect />
-    //</Mcom />
-   //<Myform />
-    <BrowserRouter>
-      {/* <RouteMain /> */}
-      <Wmain />
-    </BrowserRouter>
+    // </Mcom />
+   // <Myform />
+    // <BrowserRouter>
+    //   {/* <RouteMain /> */}
+    //   <Wmain />
+    // </BrowserRouter>
+
+    // <Async />
+    <Boxoffice />
   );
 }
 
