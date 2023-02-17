@@ -13,7 +13,7 @@ import './App.css';
 //import Wmain from './10/Wmain';
 // import Async from './11/Async' ;
 import Boxoffice from './11/Boxoffice' ;
-
+// import AIHub from './99/AIHub' ;
 // import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
@@ -34,6 +34,7 @@ const App = () => {
 
     // <Async />
     <Boxoffice />
+    // <AIHub />
   );
 }
 
