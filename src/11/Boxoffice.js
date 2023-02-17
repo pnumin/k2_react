@@ -1,4 +1,5 @@
 import { useState, useEffect , useRef} from "react";
+import BoxofficeList from "./BoxofficeList";
 import './Boxoffice.css' ;
 
 const Boxoffice = () => {
@@ -15,12 +16,12 @@ const Boxoffice = () => {
 
     //targetDt변경시 
     useEffect(() => {
-        console.log("targetDt" , targetDt)
+        //console.log("targetDt" , targetDt)
     }, [targetDt]) ;
 
     //input 이벤트
     const handleMv = () => {
-        console.log(mvdr.current.value)
+        //console.log(mvdr.current.value)
         setTargetDt(mvdr.current.value.replaceAll('-','')) ;
     }
 
@@ -33,7 +34,7 @@ const Boxoffice = () => {
                 </form>
             </div>
             <div className="mvmain">
-                목록나오기
+                {targetDt && <BoxofficeList tDt={targetDt}/>}
             </div>
         </>
     );
